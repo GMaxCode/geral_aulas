@@ -6,17 +6,18 @@ produtos = {
 }
 g = 0
 while True:
-    num1 = input(f'qual produto deseja comprar {produtos.keys()}: ').lower() # o lower transforma a primeira letra em minuscula.
+    num1 = input(f'qual produto deseja comprar {produtos.keys()}: ').lower() #
     num2 = int(input(f'quantos você vai querer de {num1}: '))
     total = produtos.get(num1) * num2 
-    sair = input('deseja mais alguma coisa: ').capitalize()
+    g += total
+    sair = input('deseja mais alguma coisa [s]im ou [n]ão: ').capitalize()
     if sair == 'Não':
-        print(f'muito obrigado!! a compra ficou no valor de R$ {total:.2f}')
+        print(f'muito obrigado!! a compra ficou no valor de R$ {g:.2f}')
         break
     else:
         print('continue...')
         continue
-    g += total
+    
         
 
  

@@ -1,6 +1,18 @@
 # FUNÇÕES
-def print_values(valor):
-    calc = (valor * 10) / 100
-    return calc
-resultado = print_values(80)
-print(resultado)
+valor = float(input('digite o valor da divida: '))
+def cal_impost(valor): 
+    imposto = valor < 100 * 0.01 
+    if imposto < 500 * 0.05:
+
+     if imposto < 1000 * 0.10:
+
+      return imposto
+
+resultado = cal_impost(valor)
+     
+print(f'o valor do imposto é {resultado} ')
+
+
+    
+    
+
